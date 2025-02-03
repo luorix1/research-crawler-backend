@@ -6,10 +6,15 @@ authors = ["f4ww4z"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.13"
 Crawl4AI = "^0.3.746"
 fastapi = {extras = ["standard"], version = "^0.115.5"}
 aiofiles = "^24.1.0"
+pinecone = {extras = ["grpc"], version = "^5.4.2"}
+langchain-pinecone = "^0.2.2"
+langchain = "^0.3.17"
+langchain-openai = "^0.3.3"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^2.3.1"

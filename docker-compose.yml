@@ -6,3 +6,5 @@ services:
     volumes:
       - ./output:/app/output
     restart: unless-stopped
+    env_file:
+      - .env
